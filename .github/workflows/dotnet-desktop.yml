@@ -92,7 +92,7 @@ jobs:
         Configuration: ${{ matrix.configuration }}
 
     - name: Zip build artifacts
-      run: 7z a ${{ env.Wap_Project_Directory }}\bin\Release\Release.zip ${{ env.Wap_Project_Directory }}\bin\Release\netcoreapp3.0
+      run: 7z a ${{ env.Wap_Project_Directory }}\bin\Release\Release.zip ${{ env.Wap_Project_Directory }}\bin\Release
 
     # Upload the MSIX package: https://github.com/marketplace/actions/upload-a-build-artifact
     - name: Upload build artifacts
